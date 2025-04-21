@@ -1,4 +1,4 @@
-# 📌 Score-Based Generative Modeling with SDEs for Images and Time Series
+# 📌 Score-Based Generative Modeling with SDEs
 
 This repository contains an implementation of a score-based generative model using **stochastic differential equations (SDEs)**. It includes experiments on both image data (MNIST) and synthetic time series derived from Ornstein-Uhlenbeck and GARCH processes.
 
@@ -10,25 +10,21 @@ Contact: remisurat@outlook.com
 ## 📂 Project Structure
 
 ```
-.
-├── checkpoints/               # Model checkpoints
-├── data/                      # MNIST data
-├── figures/                   # Figures
+/DiffusionSDE
+├── figures/                   # Nice figures for the notebooks
 ├── models/
-│   ├── loss.py                # DSM losses
-│   ├── sampling.py            # Euler samplers
-│   ├── score_net.py           # U-Net model
+│   ├── loss.py                # DSM losses for VE and VP SDEs 
+│   ├── sampling.py            # Euler samplers for VE and VP SDEs
+│   ├── score_net.py           # ScoreNet model (U-net + time embedding)
 │   └── training.py            # Training loop
 ├── utils/
-│   ├── data_generation.py     # OU process generator
-│   ├── imports.py             # Imports & configs
-│   ├── ts_to_img.py           # Delay embedding of time series
-│   └── utils.py               # Utilities
+│   ├── ts_gen.py              # OU/GARCH time series generators
+│   ├── imports.py             # Usefull library imports
+│   ├── ts_to_img.py           # Embedding of time series
+│   └── utils.py               # Seed, display functions
 ├── demo_MNIST.ipynb           # MNIST training & sampling demo
 ├── demo_TimeSeries.ipynb      # Time series training & sampling demo
-├── theory.ipynb               # Theoretical background & explanations
-├── biblio.ipynb               # References
-└── README.md                  
+└── theory.ipynb               # Theory behind score-based diffusion with SDEs          
 ```
 
 ---

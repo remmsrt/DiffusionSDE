@@ -17,6 +17,8 @@ biblio.ipynb
 
 # Model checkpoints and logs
 checkpoints/
+checkpoints/**
+/checkpoints/
 *.ckpt
 *.pt
 *.pth
@@ -25,6 +27,8 @@ checkpoints/
 
 # Datasets
 data/
+data/**
+/data/
 *.csv
 *.npz
 *.npy
