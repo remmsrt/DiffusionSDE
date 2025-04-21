@@ -1,0 +1,41 @@
+# MacOS system files
+.DS_Store
+**/.DS_Store
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore compiled notebooks / temp
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Jupyter notebooks to ignore
+biblio.ipynb
+
+# Model checkpoints and logs
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.log
+
+# Datasets
+data/
+*.csv
+*.npz
+*.npy
+*.pkl
+
+# Ignore built envs (if ever)
+.env/
+.venv/
+venv/
+env/
+ENV/
+
+# Misc
+*.swp
