@@ -11,7 +11,7 @@ Contact: remisurat@outlook.com
 
 To understand and reproduce the methodology, I recommend the following order:
 
-1. Start with [theory.ipynb](theory.ipynb) — It introduces the key mathematical concepts behind score-based diffusion modeling with SDEs.
+1. Start with [theory.ipynb](theory.ipynb) — It introduces the mathematical concepts behind diffusion with SDEs.
 2. Then read [demo_MNIST.ipynb](demo_MNIST.ipynb) — A practical example on the MNIST dataset.
 3. Finally read [demo_TimeSeries.ipynb](demo_TimeSeries.ipynb) — An application on time series data.
 
